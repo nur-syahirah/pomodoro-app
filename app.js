@@ -37,8 +37,8 @@ This is a Pomodoro focus technique. You will be focusing for 4 cycles of 25 minu
 Ready to conquer the world? PRESS LEGGO! 
 P.S. You may need to adjust your volume to a higher setting. 
 
-Any other matter to attend? Press the pause or reset button.
-Do remember though, you snooze, you lose~
+Any other matters to attend? Press the pause or reset button.
+Do remember though, if you snooze, you lose~
 `.trim();
 
 // Helper to update the UI
