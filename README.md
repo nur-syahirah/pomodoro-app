@@ -21,12 +21,15 @@ Perfect for deep work, study sessions, and anyone who thrives in time-boxed prod
 - Responsive design using Flexbox
 ---
 
+## 🔎 Live Preview
+You can explore the full Pomodoro timer app [right here](https://nur-syahirah.github.io/pomodoro-app/)  
+No installation needed — just open and you are ready to use it!
+
 ## 🚀 How to Use
-1. Open `index.html` in your browser.
-2. Click the **LEGGO** button to start your first 25-minute focus session.
-3. Upon session completion, a bell rings and a 5-minute break starts automatically.
-4. After each break, the next lap begins — repeat until 4 full cycles are complete.
-5. Use **Pause** or **Reset** anytime you need to take a longer break.
+1. Click the **LEGGO** button to start your first 25-minute focus session.
+2. Upon session completion, a bell rings and a 5-minute break starts automatically.
+3. After each break, the next lap begins — repeat until 4 full cycles are complete.
+4. Use **Pause** or **Reset** anytime you need to take a longer break.
 ---
 
 ## 🎉 Motivation Messages
