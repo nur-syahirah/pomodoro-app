@@ -32,7 +32,7 @@ No installation needed — just open and you are ready to use it!
 4. Use **Pause** or **Reset** anytime you need to take a longer break.
 ---
 
-## 🎉 Motivation Messages
+## 💪🏼 Motivation Messages
 Each lap and break includes a curated motivational message:
 - First Lap: `Leggo! First lap! You can do this!`
 - First Break: `Well done! You deserve the break! …`
@@ -40,7 +40,7 @@ Each lap and break includes a curated motivational message:
 - And so on through Lap 4 and final break...
 ---
 
-## 📦 To Customize
+## 🛠️ To Customize
 - Change background images in `style/styles.css` under `.morning` or `.night` themes
 - Replace motivational messages in `app.js` (`focusMessages` and `breakMessages`)
 - Add custom audio under `/resources/audio` and update `app.js` references
