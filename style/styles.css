@@ -1,0 +1,188 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* Hide stars unless it’s night */
+body:not(.night) .stars,
+body:not(.night) .stars2,
+body:not(.night) .stars3 {
+  display: none;
+}
+
+/* Morning: Dreamy Clouds */
+body.morning {
+  background: url('../resources/image/morning_bg.jpg') center center fixed;
+  background-size:cover;
+}
+
+/* Night: Starfield Gradient */
+body.night {
+  background: linear-gradient(to bottom, #0d1b2a 0%, #000a12 100%);
+}
+
+body {
+  transition: 1s ease-in-out;
+  /* Night-sky gradient from dark navy to near-black */
+  background: linear-gradient(
+    to bottom,
+    #0d1b2a 0%,
+    #000a12 100%
+  );
+}
+
+/* Shared star-layer styles */
+.stars, .stars2, .stars3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: transparent;
+  will-change: opacity;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+/* Farthest, smallest stars */
+.stars {
+  width: 1px;
+  height: 1px;
+  box-shadow:
+    10vw 15vh #fff, 20vw 50vh #fff, 30vw 30vh #fff,
+    55vw 80vh #fff, 70vw 40vh #fff, 85vw 60vh #fff,
+    90vw 10vh #fff, 5vw 90vh #fff, 45vw 20vh #fff,
+    60vw 75vh #fff;
+  animation-duration: 2s;
+}
+
+/* Mid-sized stars */
+.stars2 {
+  width: 2px;
+  height: 2px;
+  box-shadow:
+    15vw 25vh #eee, 25vw 60vh #eee, 40vw 10vh #eee,
+    65vw 85vh #eee, 80vw 35vh #eee, 95vw 55vh #eee,
+    12vw 95vh #eee, 50vw 30vh #eee, 75vw 15vh #eee,
+    60vw 65vh #eee;
+  animation-duration: 3s;
+}
+
+/* Nearest, largest stars */
+.stars3 {
+  width: 3px;
+  height: 3px;
+  box-shadow:
+    5vw 45vh #ddd, 30vw 70vh #ddd, 50vw 20vh #ddd,
+    72vw 50vh #ddd, 88vw 25vh #ddd, 15vw 85vh #ddd,
+    35vw 10vh #ddd, 65vw 40vh #ddd, 90vw 80vh #ddd,
+    20vw 60vh #ddd;
+  animation-duration: 4s;
+}
+
+@keyframes twinkle {
+  from { opacity: 0.3; }
+  to   { opacity: 1;   }
+}
+
+
+h1 {
+  font-size: 4rem;
+  margin: 0 auto 10px auto;
+  color: hsl(196, 92%, 50%);
+  font-family: 'Pixelify Sans', sans-serif;
+  text-align: center;
+}
+
+p {
+  margin: 0;
+}
+
+.app-message {
+  /* Respect manual line breaks and wrap long text */
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+  text-align: center;
+
+  /* Constrain height so it never pushes other items off-screen */
+  max-height: 350px;
+  overflow-y: auto;      /* scroll if too long */
+  padding: 0.5rem 0;  
+  font-size: 1.8rem;
+  color: #32bbe5;  
+  font-family: "Jersey 10", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.app-container {
+  /* remove any margins you don’t need */
+  margin: 0;
+
+  /* Flex layout inside stays the same */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  /* size */
+  width: 90%;
+  max-width: 880px;
+  height: fit-content;
+  padding: 0.5rem;
+  box-sizing: border-box;
+
+  /* absolute centering */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  /* styling */
+  background: rgba(255,255,255,0.1);
+  border-radius: 5px;
+}
+
+.app-counter-box {
+  font-family: "Doto", sans-serif;
+  font-size: 350%;
+  position: relative;
+  color: #32bbe5;
+  text-align: center;
+  font-family: "Jersey 10", sans-serif;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.btn-group img {
+  width: 8.5rem; /* adjust size */
+  image-rendering: pixelated;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  -webkit-user-drag: none;
+}
+
+.btn-group img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

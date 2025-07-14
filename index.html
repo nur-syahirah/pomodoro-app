@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>In The Zone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">   
+    <link href="https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/styles.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="stars2"></div>
+    <div class="stars3"></div>
+
+    <div class="app-container">
+        <h1>Let's Focus!</h1>
+        <div class="app-message"> <!-- Message is set in .js--></div>
+
+        <div class="app-counter-box">
+        <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+        </div>
+
+        <div class="btn-group">
+            <button class="btn-start">
+                <img src="resources/image/btn_leggo.png" alt="Start">
+            </button>
+            <button class="btn-pause hidden">
+                <img src="resources/image/btn_pause.png" alt="Pause">
+            </button>
+            <button class="btn-reset hidden">
+                <img src="resources/image/btn_reset.png" alt="Reset">
+            </button>
+        </div>
+    </div>
+    <audio id="background-audio" loop>
+        <source src="resources/audio/brown_noise.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+</body>
+    <script src="./app.js"></script>
+</html>
