@@ -56,7 +56,9 @@ Pomodoro is a productivity method that divides work into focused intervals (typi
 ## 📷 Screenshots
 <img width="414" height="253" alt="ss" src="https://github.com/user-attachments/assets/40724ff4-1883-4d7e-bf99-8badd74134ab" />
 
----
+https://github.com/user-attachments/assets/b46d544a-5c2e-4fea-8ade-b2917b267952
+
+--
 
 ## 🖌️ Credits
 Built by yours truly(:
