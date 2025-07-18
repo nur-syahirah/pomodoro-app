@@ -23,7 +23,7 @@ Perfect for deep work, study sessions, and anyone who thrives in time-boxed prod
 
 ## 🔎 Live Preview
 You can explore the full Pomodoro timer app [right here](https://nur-syahirah.github.io/pomodoro-app/)  
-No installation needed — just open and you are ready to use it!
+No installation needed — just click on the link(:
 
 ## 🚀 How to Use
 1. Click the **LEGGO** button to start your first 25-minute focus session.
